@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "GrowingIO Kits",
+  "description": "GrowingIO调试工具、圈选、热图。",
+  "icons": {
+    "16": "/images/g16.png",
+    "32": "/images/g32.png",
+    "48": "/images/g48.png",
+    "64": "/images/g64.png",
+    "128": "/images/g128.png"
+  },
+  "action": {
+    "default_popup": "index.html"
+  }
+}
