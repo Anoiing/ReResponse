@@ -1,6 +1,7 @@
 import { defineConfig } from "vite";
-import { svelte } from "@sveltejs/vite-plugin-svelte";
 import { readFileSync, writeFileSync } from "fs";
+import { svelte } from "@sveltejs/vite-plugin-svelte";
+import path from "path";
 
 // 处理manifest.json
 const pkg = JSON.parse(
@@ -14,5 +15,11 @@ writeFileSync("./public/manifest.json", JSON.stringify(manifest));
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [svelte()]
+  plugins: [svelte()],
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "src"),
+      glodash: path.resolve(__dirname, "src/utils/glodash.ts")
+    }
+  }
 });

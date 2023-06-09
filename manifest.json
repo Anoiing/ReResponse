@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "GrowingIO Kits",
-  "description": "GrowingIO调试工具、圈选、热图。",
+  "name": "ReResponse",
+  "description": "Web远程资源调试工具",
   "icons": {
     "16": "/images/g16.png",
     "32": "/images/g32.png",
